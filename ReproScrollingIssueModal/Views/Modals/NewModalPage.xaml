@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReproScrollingIssueModal.Views.Modals.NewModalPage"
+             Title="NewModalPage"
+             
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"  
+             ios:Page.ModalPresentationStyle="FormSheet"
+             Shell.PresentationMode="ModalAnimated"
+             >
+    <Grid
+        RowDefinitions="Auto,*,Auto"
+        BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}"
+        >
+        <VerticalStackLayout
+            HeightRequest="80"
+            >
+            <Label
+                Text="Headline"
+                />
+            <BoxView />
+        </VerticalStackLayout>
+
+        <ScrollView
+            Grid.Row="1"
+            >
+            <VerticalStackLayout
+                Padding="4"
+                Margin="12"
+                >
+                <Label 
+                    Text="First entry form"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    />
+
+                <Grid
+                    ColumnDefinitions="50,*"
+                    >
+                    <Label
+                        Text="#1"
+                        />
+                    <Entry
+                        Grid.Column="1"
+                        Margin="4,8"/>
+                </Grid>
+                <!-- Uncomment to see issue
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                -->
+                <Label 
+                    Text="Last entry form"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    />
+                <Entry Margin="4,8"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <VerticalStackLayout
+            Grid.Row="2"
+            BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray900}}"
+            >
+            <BoxView />
+            <Button
+                Margin="20,12,20,12"
+                Text="Save"
+                />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
