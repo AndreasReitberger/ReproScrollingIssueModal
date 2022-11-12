@@ -44,7 +44,7 @@
                         Grid.Column="1"
                         Margin="4,8"/>
                 </Grid>
-                <!-- Uncomment to see issue
+                <!-- Uncomment to see issue-->
                 <Entry Margin="4,8"/>
                 <Entry Margin="4,8"/>
                 <Entry Margin="4,8"/>
@@ -61,7 +61,7 @@
                 <Entry Margin="4,8"/>
                 <Entry Margin="4,8"/>
                 <Entry Margin="4,8"/>
-                -->
+                
                 <Label 
                     Text="Last entry form"
                     VerticalOptions="Center" 
