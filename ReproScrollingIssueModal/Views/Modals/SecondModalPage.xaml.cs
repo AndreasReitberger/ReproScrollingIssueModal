@@ -1,8 +1,8 @@
 namespace ReproScrollingIssueModal.Views.Modals;
 
-public partial class NewModalPage : ContentPage
+public partial class SecondModalPage : ContentPage
 {
-	public NewModalPage()
+	public SecondModalPage()
 	{
 		InitializeComponent();
 	}
@@ -20,6 +20,6 @@ public partial class NewModalPage : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-        Shell.Current.GoToAsync(nameof(SecondModalPage));
+        Shell.Current.GoToAsync("..");
     }
 }

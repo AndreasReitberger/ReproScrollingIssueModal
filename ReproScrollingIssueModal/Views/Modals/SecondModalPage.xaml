@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ReproScrollingIssueModal.Views.Modals.NewModalPage"
+             x:Class="ReproScrollingIssueModal.Views.Modals.SecondModalPage"
              Title="NewModalPage"
              
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"  
@@ -34,10 +34,41 @@
                     HorizontalOptions="Center" 
                     />
 
-                <Button 
-                    Text="Open second modal"
-                    Clicked="Button_Clicked"
+                <Grid
+                    ColumnDefinitions="50,*"
+                    >
+                    <Label
+                        Text="#1"
+                        />
+                    <Entry
+                        Grid.Column="1"
+                        Margin="4,8"/>
+                </Grid>
+                <!-- Uncomment to see issue-->
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                <Entry Margin="4,8"/>
+                
+                <Label 
+                    Text="Last entry form"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
                     />
+                <Entry Margin="4,8"/>
+
             </VerticalStackLayout>
         </ScrollView>
 
@@ -49,6 +80,7 @@
             <Button
                 Margin="20,12,20,12"
                 Text="Save"
+                Clicked="Button_Clicked"
                 />
         </VerticalStackLayout>
     </Grid>

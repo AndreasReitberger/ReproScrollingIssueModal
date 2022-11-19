@@ -11,5 +11,6 @@ public partial class App : Application
 		MainPage = new AppShell();
 
         Routing.RegisterRoute(nameof(NewModalPage), typeof(NewModalPage));
+        Routing.RegisterRoute(nameof(SecondModalPage), typeof(SecondModalPage));
     }
 }
